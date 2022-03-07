@@ -1,0 +1,29 @@
+.box{
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+   
+}
+
+.tweet{
+    height: 250px;
+    width: 450px;
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    display: flex;
+    line-height: 30px;
+}
+.name{
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    margin-right: 0.3em;
+}
+.button{
+    margin-top: 10px;
+    margin-left: 2px;
+    font-size: 1.4em;
+    color: red;
+}
+.button i{
+    width: 80px;
+}

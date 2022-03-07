@@ -1,23 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+
+import Tweet from './Sweet-Tweet/Tweet';
+import './index.css'
+
+const content1 ={
+  author : {
+    name:"pavani",
+    handle:"love coding"
+  },
+  message:"Good morning everyone"
+}
+const content2 ={
+  author : {
+    name:"mamatha",
+    handle:"love cooking"
+  },
+  message:"Nice Food Here Everyone"
+}
+const content3 ={
+  author : {
+    name:"Naga JYothi",
+    handle:"love farming"
+  },
+  message:"I am Proud myself"
+}
 
 function App() {
+  console.log(content1);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='box'>
+      <Tweet data= {content1}/>
+      <Tweet data= {content2}/>
+      <Tweet data= {content3}/>
+
+     
     </div>
   );
 }
